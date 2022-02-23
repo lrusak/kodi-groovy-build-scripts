@@ -1,0 +1,82 @@
+
+plugins {
+    id 'groovy'
+}
+
+repositories {
+    maven {
+        url 'https://repo.jenkins-ci.org/releases/'
+    }
+    maven {
+        url 'https://repo.jenkins-ci.org/public/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.4.21'
+
+    implementation 'org.jenkins-ci.main:jenkins-core:2.99'
+
+    implementation 'org.jenkins-ci.main:jenkins-war:2.333'
+
+    implementation 'org.jenkins-ci.plugins:jenkins-multijob-plugin:1.36@jar'
+
+    implementation 'org.jenkins-ci.plugins:script-security:1.78@jar'
+
+    implementation 'org.jvnet.hudson.plugins:groovy-postbuild:2.5@jar'
+
+    implementation 'org.jenkins-ci.plugins:matrix-project:1.20@jar'
+
+    implementation 'org.jenkins-ci.plugins:git-client:3.11.0@jar'
+
+    implementation 'org.jenkins-ci.plugins:git:4.10.3@jar'
+
+    implementation 'org.jenkins-ci.plugins:scm-api:2.6.5@jar'
+
+    implementation 'org.jenkins-ci.plugins:credentials-binding:1.27.1@jar'
+
+    implementation 'org.jenkins-ci.plugins.workflow:workflow-scm-step:2.13@jar'
+
+    implementation 'org.jenkins-ci.plugins:junit:1.55@jar'
+
+    implementation 'org.jenkins-ci.plugins:badge:1.9.1@jar'
+
+    implementation 'org.jenkins-ci.plugins:credentials:2.6.2@jar'
+
+    implementation 'org.jenkins-ci.plugins:plain-credentials:1.8@jar'
+
+    implementation 'org.jenkins-ci.plugins:ssh-credentials:1.18.1@jar'
+
+    implementation 'org.jenkins-ci.plugins:structs:1.24@jar'
+
+    implementation 'org.jenkins-ci.plugins:antisamy-markup-formatter:2.7@jar'
+
+    implementation 'org.jenkins-ci.plugins.workflow:workflow-step-api:2.24@jar'
+
+    implementation 'org.jenkins-ci.plugins:groovy:2.4@jar'
+
+    implementation 'org.jenkins-ci.plugins:preSCMbuildstep:0.3@jar'
+
+    implementation 'org.jenkins-ci.main:jenkins-test-harness:2.72'
+
+    implementation 'org.kohsuke:github-api:1.301@jar'
+
+    implementation 'org.kohsuke:groovy-sandbox:1.27@jar'
+
+    implementation 'com.github.ben-manes.caffeine:caffeine:3.0.5'
+
+    implementation 'org.antlr:antlr4-runtime:4.3'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
+
+    implementation 'com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20211018.2'
+
+    implementation 'org.eclipse.jgit:org.eclipse.jgit:6.0.0.202111291000-r'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+test {
+  testLogging.showStandardStreams = true
+}
